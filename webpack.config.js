@@ -1,5 +1,5 @@
 const path = require('path');
-const { mainModule } = require('process');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './public/js/index.js',
@@ -7,5 +7,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.bundle.js'
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "chart",
+            chart: "chart"
+        }),
+    ],
     mode: 'development'
 }
