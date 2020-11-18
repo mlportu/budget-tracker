@@ -5,6 +5,7 @@ const FILES_TO_CACHE = [
     './index.html',
     '../dist/index.bundle.js',
     './style.css',
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
 ]
 
 

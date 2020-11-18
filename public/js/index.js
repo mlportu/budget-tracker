@@ -1,6 +1,6 @@
 let transactions = [];
 let myChart;
-require('chart.js');
+
 
 fetch("/api/transaction")
   .then(response => {
