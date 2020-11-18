@@ -4,9 +4,9 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     '/js/index.js',
     '/js/idb.js',
-    // '/index.js',
-    // '/css/style.css',
-    // "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+    '/index.html',
+    '/css/styles.css',
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
 ]
 
 
