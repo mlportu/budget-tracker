@@ -73,7 +73,7 @@ function uploadTransaction() {
                 //access the new budget item object store
                 const budgetObjectStore = transaction.objectStore('new_budget_item');
                 //clear all items in your store
-                pizzaObjectStore.clear();
+                budgetObjectStore.clear();
 
                 alert('All saved budget transactions have been submitted');
             })
