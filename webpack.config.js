@@ -2,16 +2,16 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './public/js/index.js',
+    entry: {
+        index: './public/js/index.js',
+    },    
     output: { 
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.bundle.js'
+        filename: '[name].bundle.js',
+        path: __dirname + "/dist",
     },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: "chart",
-            chart: "chart"
-        }),
-    ],
+    devServer:{
+        contentBase:'./public',
+        hot: true
+    },
     mode: 'development'
 }
