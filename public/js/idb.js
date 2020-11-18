@@ -64,7 +64,7 @@ function uploadTransaction() {
                 }
               })
             .then(response => response.json())
-            then(serverResponse => {
+            .then(serverResponse => {
                 if(serverResponse.message){
                     throw new Error(serverResponse);
                 }
